@@ -1,12 +1,16 @@
 ﻿using System;
 using BasicCoreProgram;
+using CheckVowelConsonant;
 class EvenOdd
 {
     public static void Main()
     {
-        Console.Write("*******----Program to Check Whether a Number is Even or Odd:----********\n");
-        CheckEvenOdd number = new CheckEvenOdd();
-        number.EvenOdd();
+        Console.Write("*******----Program to Check Whether a Character is Vowel or Consonant:----********\n");
+        // CheckEvenOdd number = new CheckEvenOdd();
+        // number.EvenOdd();
+
+        VowelConsonant characterr = new VowelConsonant();
+        characterr.CkeckVowelConso();
 
     }
 }
