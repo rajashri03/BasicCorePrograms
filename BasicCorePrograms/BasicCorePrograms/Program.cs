@@ -6,6 +6,7 @@ using CheckSwapNumber;
 using CheckQR;
 using Head_Tails;
 using CheckLP;
+using CheckHarmonic;
 class EvenOdd
 {
     public static void Main()
@@ -25,6 +26,8 @@ class EvenOdd
         HeadsTails headtail = new HeadsTails();
         //LeapYear
         LeapYear leap = new LeapYear();
+        //Harmonic
+        Harmonic harm = new Harmonic();
 
         while (true)
         {
@@ -35,7 +38,8 @@ class EvenOdd
                 "4.Swap Two Numbers\n" +
                 "5.Compute Quotient and Remainder\n" +
                 "6.Find percentage of Heads and Tails\n"+
-                "7.Find Leap Year\n" );
+                "7.Find Leap Year\n"+
+                 "8.Harmonic Number\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -59,6 +63,9 @@ class EvenOdd
                     break;
                 case 7:
                     leap.CheckLeap();
+                    break;
+                case 8:
+                    harm.CheckNum();
                     break;
                 default:
                     Console.Write("Please Select Correct Number\n");
