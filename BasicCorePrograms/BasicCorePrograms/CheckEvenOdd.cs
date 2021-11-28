@@ -16,11 +16,11 @@ namespace BasicCoreProgram
             if (Num % 2 == 0)
             {
 
-                Console.WriteLine("Number is Even");
+                Console.WriteLine("Number is Even\n");
             }
             else
             {
-                Console.Write("Number is odd");
+                Console.Write("Number is odd\n");
             }
             return Num;
         }
