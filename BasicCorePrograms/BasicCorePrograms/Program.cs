@@ -7,6 +7,7 @@ using CheckQR;
 using Head_Tails;
 using CheckLP;
 using CheckHarmonic;
+using PrimeNum;
 class EvenOdd
 {
     public static void Main()
@@ -28,7 +29,8 @@ class EvenOdd
         LeapYear leap = new LeapYear();
         //Harmonic
         Harmonic harm = new Harmonic();
-
+        //Harmonic
+        Prime prime = new Prime();
         while (true)
         {
             Console.WriteLine("Select Number:\n" +
@@ -39,7 +41,8 @@ class EvenOdd
                 "5.Compute Quotient and Remainder\n" +
                 "6.Find percentage of Heads and Tails\n"+
                 "7.Find Leap Year\n"+
-                 "8.Harmonic Number\n");
+                 "8.Harmonic Number\n"+
+                 "9.Find Prime Factor of Number\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -66,6 +69,9 @@ class EvenOdd
                     break;
                 case 8:
                     harm.CheckNum();
+                    break;
+                case 9:
+                    prime.CheckPrime();
                     break;
                 default:
                     Console.Write("Please Select Correct Number\n");
