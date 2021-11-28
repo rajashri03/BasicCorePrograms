@@ -2,6 +2,7 @@
 using BasicCoreProgram;
 using CheckVowelConsonant;
 using LargeNum;
+using CheckSwapNumber;
 class EvenOdd
 {
     public static void Main()
@@ -12,8 +13,15 @@ class EvenOdd
         VowelConsonant characterr = new VowelConsonant();
         //For LargeNumber
         LargeNumber bignum = new LargeNumber();
+        //For Swap Two Numbers
+        SwapNum swapping = new SwapNum();
+        
 
-        Console.WriteLine("Select Number:\n1.Check Whether a Number is Even or Odd\n2.Check Whether an Alphabet is Vowel or Consonant\n3.Find the Largest Among Three Numbers");
+        Console.WriteLine("Select Number:\n" +
+            "1.Check Whether a Number is Even or Odd\n" +
+            "2.Check Whether an Alphabet is Vowel or Consonant\n" +
+            "3.Find the Largest Among Three Numbers\n"+
+            "4.Swap Two Numbers");
             int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
         {
@@ -25,6 +33,9 @@ class EvenOdd
                 break;
             case 3:
                 bignum.Checkbig();
+                break;
+            case 4:
+                swapping.CheckSwap();
                 break;
             default:
                 Console.Write("Please Select Correct Number");
