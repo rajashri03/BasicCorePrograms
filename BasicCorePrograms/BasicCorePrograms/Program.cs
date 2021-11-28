@@ -5,6 +5,7 @@ using LargeNum;
 using CheckSwapNumber;
 using CheckQR;
 using Head_Tails;
+using CheckLP;
 class EvenOdd
 {
     public static void Main()
@@ -22,6 +23,8 @@ class EvenOdd
         Quotient_Remainder quotrem = new Quotient_Remainder();
         //For printing percentage of Heads and Tails
         HeadsTails headtail = new HeadsTails();
+        //LeapYear
+        LeapYear leap = new LeapYear();
 
         while (true)
         {
@@ -31,7 +34,8 @@ class EvenOdd
                 "3.Find the Largest Among Three Numbers\n" +
                 "4.Swap Two Numbers\n" +
                 "5.Compute Quotient and Remainder\n" +
-                "6.Find percentage of Heads and Tails\n");
+                "6.Find percentage of Heads and Tails\n"+
+                "7.Find Leap Year\n" );
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -52,6 +56,9 @@ class EvenOdd
                     break;
                 case 6:
                     headtail.CheckHeadTail();
+                    break;
+                case 7:
+                    leap.CheckLeap();
                     break;
                 default:
                     Console.Write("Please Select Correct Number\n");
