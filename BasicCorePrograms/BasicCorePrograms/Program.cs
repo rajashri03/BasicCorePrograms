@@ -29,8 +29,10 @@ class EvenOdd
         LeapYear leap = new LeapYear();
         //Harmonic
         Harmonic harm = new Harmonic();
-        //Harmonic
+        //Prime
         Prime prime = new Prime();
+        //Powerof
+        PowerOfTwo power = new PowerOfTwo();
         while (true)
         {
             Console.WriteLine("Select Number:\n" +
@@ -42,7 +44,8 @@ class EvenOdd
                 "6.Find percentage of Heads and Tails\n"+
                 "7.Find Leap Year\n"+
                  "8.Harmonic Number\n"+
-                 "9.Find Prime Factor of Number\n");
+                 "9.Find Prime Factor of Number\n" +
+                 "10.Power Of Two\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -72,6 +75,9 @@ class EvenOdd
                     break;
                 case 9:
                     prime.CheckPrime();
+                    break;
+                case 10:
+                    power.Power();
                     break;
                 default:
                     Console.Write("Please Select Correct Number\n");
